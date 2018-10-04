@@ -4,22 +4,22 @@
       <v-flex xs12 sm4>
         <v-card class="elevation-0 transparent">
           <v-card-title primary-title class="layout justify-center">
-            <div class="headline">Company info</div>
+            <div class="headline">О нас</div>
           </v-card-title>
           <v-card-text>
-            Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-            Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+            Мы Выпускаем уникльные подарки handmade долгий период времени. 
+            Все наши продукты явлются уникальными предметами ручной работы. 
+            Мы делаем уклон на качество и индивидуальный подход к клиентам. 
           </v-card-text>
         </v-card>
       </v-flex>
       <v-flex xs12 sm4 offset-sm1>
         <v-card class="elevation-0 transparent">
           <v-card-title primary-title class="layout justify-center">
-            <div class="headline">Contact us</div>
+            <div class="headline">Свяжитесь с нами</div>
           </v-card-title>
           <v-card-text>
-            Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+            Позвоните или напишите Нам и мы поможем с выбором подарка. Индивидульный подбор продукта к конкретному празднику.
           </v-card-text>
           <v-list class="transparent">
             <v-list-tile>

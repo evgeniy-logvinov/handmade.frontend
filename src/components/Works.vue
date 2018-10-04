@@ -1,25 +1,34 @@
 <template>
-  <v-layout>
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card>
-        <v-img
-          src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-          aspect-ratio="2.75"
-        ></v-img>
+  <v-layout
+    row
+    wrap
+    class="my-5"
+    align-center>
+    <v-flex xs12>
+      <v-container grid-list-xl>
+        <v-layout row align-center>
+            <v-flex v-for="work in works" v-bind:key="work.id" xs3>
+              <v-card>
+                <v-img
+                  :src="work.src"
+                ></v-img>
 
-        <v-card-title primary-title>
-          <div>
-            <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
-            <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
-          </div>
-        </v-card-title>
+                <v-card-title primary-title>
+                  <div>
+                    <h2 class="mb-0">{{work.title}}</h2>
+                    <div>{{work.about}}</div>
+                  </div>
+                </v-card-title>
 
-        <v-card-actions>
-          <v-btn flat color="orange">Share</v-btn>
-          <v-btn flat color="orange">Explore</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
+                <!-- <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions> -->
+              </v-card>
+            </v-flex>
+        </v-layout>
+      </v-container>        
+    </v-flex>    
   </v-layout>
 </template>
 
@@ -33,6 +42,32 @@ import { Component, Vue } from 'vue-property-decorator';
   },
 })
 export default class Works extends Vue {
-  private cardText: string =  'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.';
+  private works = [
+    {
+      id: '1',
+      src: 'assets/works/work_1.jpg',
+      title: 'Kangaroo Valley Safari',
+      about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
+    },
+    {
+      id: '2',
+      src: 'assets/works/work_2.jpg',
+      title: 'Kangaroo Valley Safari',
+      about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
+    },
+    {
+      id: '3',
+      src: 'assets/works/work_3.jpg',
+      title: 'Kangaroo Valley Safari',
+      about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
+    },
+    {
+      id: '4',
+      src: 'assets/works/work_4.jpg',
+      title: 'Kangaroo Valley Safari',
+      about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
+    },
+  ];
+
 }
 </script>

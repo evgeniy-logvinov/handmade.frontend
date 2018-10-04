@@ -4,18 +4,19 @@
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat href="home">Home</v-btn>
-        <v-btn flat href="features">Features</v-btn>
-        <v-btn flat href="works">Works</v-btn>
-        <v-btn flat to="team">Team</v-btn>
-        <v-btn flat to="contacts">Contacts</v-btn>
+        <v-btn flat href="home">Главная</v-btn>
+        <v-btn flat href="features">Особенности</v-btn>
+        <v-btn flat href="works">Работы</v-btn>
+        <v-btn flat to="team">Команда</v-btn>
+        <v-btn flat to="contacts">Контакты</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
       <Main></Main>
       <Features></Features>        
-      <Team></Team>
       <Remark></Remark>
+      <Works></Works>
+      <Team></Team>
       <Contacts></Contacts>
     </v-content>
     <v-footer class="darken-2">
