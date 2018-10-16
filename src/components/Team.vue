@@ -1,5 +1,6 @@
 <template>
-    <v-container grid-list-md class="blue-grey lighten-4">
+  <v-parallax src="assets/hero-flowers-our-team.jpg" height="200">
+    <v-container grid-list-md class="">
       <v-layout
         column
         align-center
@@ -39,6 +40,7 @@
         </v-layout>
       </v-layout>    
     </v-container>
+  </v-parallax>
 </template>
 
 <script lang="ts">

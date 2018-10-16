@@ -1,6 +1,6 @@
 
 <template>
-  <v-parallax src="assets/hero-flowers.jpg" height="300">
+  <v-parallax src="assets/hero-flowers-our-team.jpg" height="300">
     <v-layout
       column
       align-center
