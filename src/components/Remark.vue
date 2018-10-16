@@ -1,8 +1,8 @@
 <template>
    <v-parallax src="assets/hero-flowers-our-team.jpg" height="380">
     <v-layout column align-center justify-center>
-      <div class="headline mb-3 text-xs-center">Удивите всех вашим подарком</div>
-      <em>все будут поражены</em>
+      <div class="purple--text headline mb-3 text-xs-center">Удивите всех вашим подарком</div>
+      <em class="purple--text">все будут поражены</em>
       <v-btn
         class="blue lighten-2 mt-5"
         dark

@@ -11,6 +11,7 @@
         column
         align-center
         justify-center
+        class="purple--text"
         >
         <v-flex xs12 sm4 class="my-3">
           <div class="text-xs-center">

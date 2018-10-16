@@ -7,8 +7,8 @@
       justify-center
     >
       <img src="assets/logoHM.png" alt="Vuetify.js" height="200">
-      <h1 class="white--text mb-2 display-1 text-xs-center">HandMade</h1>
-      <div class="white--text subheading mb-3 text-xs-center">Сделано с любовью</div>
+      <h1 class="purple--text  mb-2 display-1 text-xs-center">HandMade</h1>
+      <div class="purple--text subheading mb-3 text-xs-center">Сделано с любовью</div>
     </v-layout>
   </v-parallax>
 </template>
