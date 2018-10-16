@@ -7,7 +7,7 @@
         class="blue lighten-2 mt-5"
         dark
         large
-        href="/pre-made-themes"
+        @click="$emit('contactUsClick')"
       >
         Свзяаться с нами
       </v-btn>

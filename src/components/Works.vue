@@ -2,7 +2,7 @@
   <v-layout
     row
     wrap
-    class="my-5"
+    class="my-2"
     align-center>
     <v-flex xs12>
       <v-container grid-list-xl>
@@ -26,6 +26,20 @@
                 </v-card-actions> -->
               </v-card>
             </v-flex>
+        </v-layout>        
+        <v-layout 
+          xs12
+          column
+          align-center>         
+            <v-btn
+              class="blue lighten-2 mt-1"
+              dark
+              large
+              xs12
+              @click="$emit('contactUsClick')"
+            >
+              Увидеть больше продуктов
+            </v-btn>
         </v-layout>
       </v-container>        
     </v-flex>    
@@ -64,8 +78,8 @@ export default class Works extends Vue {
     {
       id: '4',
       src: 'assets/works/work_4.jpg',
-      title: 'Kangaroo Valley Safari',
-      about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
+      title: 'Шапка "Мишка Тедди"',
+      about: 'Изготовлена из натуральной шерсти. Согреет вашего малыша в холодную зиму.',
     },
   ];
 

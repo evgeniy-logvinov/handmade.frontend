@@ -1,23 +1,23 @@
 <template>
   <div class="home">
-    <v-toolbar class="white">
+    <v-toolbar class="white" fixed app>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat href="home">Главная</v-btn>
-        <v-btn flat href="features">Особенности</v-btn>
-        <v-btn flat href="works">Работы</v-btn>
-        <v-btn flat to="team">Команда</v-btn>
-        <v-btn flat to="contacts">Контакты</v-btn>
+        <v-btn flat @click="scrollTo('#main')">Главная</v-btn>
+        <v-btn flat @click="scrollTo('#features')">Особенности</v-btn>
+        <v-btn flat @click="scrollTo('#works')">Работы</v-btn>
+        <v-btn flat @click="scrollTo('#team')">Команда</v-btn>
+        <v-btn flat @click="scrollTo('#contacts')">Контакты</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
-      <Main></Main>
-      <Features></Features>        
-      <Remark></Remark>
-      <Works></Works>
-      <Team></Team>
-      <Contacts></Contacts>
+      <Main id="main"></Main>
+      <Features id="features"></Features>        
+      <Remark id="remark" @contactUsClick="scrollTo('#contacts')"></Remark>
+      <Works id="works"></Works>
+      <Team id="team"></Team>
+      <Contacts id="contacts"></Contacts>
     </v-content>
     <v-footer class="darken-2">
       <v-layout row wrap align-center>
@@ -38,6 +38,7 @@ import Works from '@/components/Works.vue';
 import Team from '@/components/Team.vue';
 import Remark from '@/components/Remark.vue';
 import Contacts from '@/components/Contacts.vue';
+import VueScrollto from 'vue-scrollto';
 
 @Component({
   components: {
@@ -51,5 +52,21 @@ import Contacts from '@/components/Contacts.vue';
 })
 export default class Home extends Vue {
   private title: string = 'HandMade';
+
+  private mounted() {
+    const blockId = this.$route.params.id;
+
+    if (blockId) {
+      this.scrollTo(blockId);
+    }
+  }
+
+  private scrollTo(id: string) {
+    this.$vuetify.goTo(id,
+    {
+      duration: 800,
+      offset: -60,
+    });
+  }
 }
 </script>

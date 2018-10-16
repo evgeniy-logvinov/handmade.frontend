@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-xl>
-    <v-layout row wrap justify-center class="my-5">
+    <v-layout row wrap justify-center class="my-2">
       <v-flex xs12 sm4>
         <v-card class="elevation-0 transparent">
           <v-card-title primary-title class="layout justify-center">
