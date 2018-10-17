@@ -59,25 +59,25 @@ export default class Works extends Vue {
   private works = [
     {
       id: '1',
-      src: 'assets/works/work_1.jpg',
+      src: 'https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775850/handmade.frontend/works/work_1.jpg',
       title: 'Kangaroo Valley Safari',
       about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
     },
     {
       id: '2',
-      src: 'assets/works/work_2.jpg',
+      src: 'https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775850/handmade.frontend/works/work_2.jpg',
       title: 'Kangaroo Valley Safari',
       about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
     },
     {
       id: '3',
-      src: 'assets/works/work_3.jpg',
+      src: 'https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775850/handmade.frontend/works/work_3.jpg',
       title: 'Kangaroo Valley Safari',
       about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
     },
     {
       id: '4',
-      src: 'assets/works/work_4.jpg',
+      src: 'https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775850/handmade.frontend/works/work_4.jpg',
       title: 'Шапка "Мишка Тедди"',
       about: 'Изготовлена из натуральной шерсти. Согреет вашего малыша в холодную зиму.',
     },

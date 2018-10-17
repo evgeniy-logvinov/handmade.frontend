@@ -1,5 +1,5 @@
 <template>
-   <v-parallax src="assets/hero-flowers-our-team.jpg" height="380">
+   <v-parallax src="https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775891/handmade.frontend/backgrounds/background.jpg" height="380">
     <v-layout column align-center justify-center>
       <div class="purple--text headline mb-3 text-xs-center">Удивите всех вашим подарком</div>
       <em class="purple--text">все будут поражены</em>

@@ -21,10 +21,12 @@
     </v-content>
     <v-footer class="darken-2">
       <v-layout row wrap align-center>
-        <v-flex xs12>
+        <v-flex xs12 justify-end>
           <v-spacer></v-spacer>
-          <div>&copy; {{ new Date().getFullYear() }}</div>            
-        </v-flex>
+          <v-layout align-end justify-end column reverse fill-height>
+            &copy; {{ new Date().getFullYear() }} All rights reserved. Powered by {{creator}}
+          </v-layout>
+        </v-flex>        
       </v-layout>
     </v-footer>
   </div>
@@ -52,6 +54,7 @@ import VueScrollto from 'vue-scrollto';
 })
 export default class Home extends Vue {
   private title: string = 'HandMade';
+  private creator: string = 'evgeniy.logvinov.k';
 
   private mounted() {
     const blockId = this.$route.params.id;

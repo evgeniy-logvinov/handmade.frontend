@@ -1,5 +1,5 @@
 <template>
-  <v-parallax src="assets/hero-flowers-our-team.jpg" height="200">
+  <v-parallax src="https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775891/handmade.frontend/backgrounds/background.jpg" height="300">
     <v-container grid-list-md class="">
       <v-layout
         column
@@ -30,10 +30,10 @@
             text-xs-center
           >
             <v-avatar
-              :size="86"
+              :size="120"
               color="grey lighten-4"
             >
-              <img src="@/assets/avatar_1.jpg" alt="avatar">
+              <img src="https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539779152/handmade.frontend/avatars/avatar_olga.jpg" alt="avatar">
             </v-avatar>
             <div class="subheading mb-3 text-xs-center">Оличка</div>
           </v-flex>
