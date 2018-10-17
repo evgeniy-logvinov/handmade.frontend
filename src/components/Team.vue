@@ -20,9 +20,6 @@
         </v-flex>
         <v-layout wrap>
           <v-flex
-            xs12
-            sm6
-            md12
             align-center
             justify-center
             layout
