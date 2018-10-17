@@ -5,10 +5,6 @@
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn v-for="item in menus" v-bind:key="item.name" flat @click="scrollTo('#' + item.name)">{{item.title}}</v-btn>
-        <!-- <v-btn flat @click="scrollTo('#features')">Особенности</v-btn>
-        <v-btn flat @click="scrollTo('#works')">Работы</v-btn>
-        <v-btn flat @click="scrollTo('#team')">Команда</v-btn>
-        <v-btn flat @click="scrollTo('#contacts')">Контакты</v-btn> -->
       </v-toolbar-items>
       <v-menu class="hidden-md-and-up">
         <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
@@ -65,12 +61,7 @@ import VueScrollto from 'vue-scrollto';
 export default class Home extends Vue {
   private title: string = 'HandMade';
   private creator: string = 'evgeniy.logvinov.k';
-    // <v-btn flat @click="scrollTo('#main')"></v-btn>
-    //     <v-btn flat @click="scrollTo('#features')">Особенности</v-btn>
-    //     <v-btn flat @click="scrollTo('#works')">Работы</v-btn>
-    //     <v-btn flat @click="scrollTo('#team')">Команда</v-btn>
-    //     <v-btn flat @click="scrollTo('#contacts')">Контакты</v-btn>
-      
+
   private menus: any = [{
     name: 'main',
     title: 'Главная',
@@ -90,7 +81,7 @@ export default class Home extends Vue {
   {
     name: 'contacts',
     title: 'Контакты',
-  },]
+  }];
 
   private mounted() {
     const blockId = this.$route.params.id;
