@@ -2,7 +2,7 @@
   <v-layout
     row
     wrap
-    class="my-5"
+    class="my-2"
     align-center>
     <v-flex xs12>
       <v-container grid-list-xl>
@@ -26,6 +26,20 @@
                 </v-card-actions> -->
               </v-card>
             </v-flex>
+        </v-layout>        
+        <v-layout 
+          xs12
+          column
+          align-center>         
+            <v-btn
+              class="blue lighten-2 mt-1"
+              dark
+              large
+              xs12
+              @click="$emit('contactUsClick')"
+            >
+              Увидеть больше продуктов
+            </v-btn>
         </v-layout>
       </v-container>        
     </v-flex>    
@@ -45,27 +59,27 @@ export default class Works extends Vue {
   private works = [
     {
       id: '1',
-      src: 'assets/works/work_1.jpg',
+      src: 'https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775850/handmade.frontend/works/work_1.jpg',
       title: 'Kangaroo Valley Safari',
       about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
     },
     {
       id: '2',
-      src: 'assets/works/work_2.jpg',
+      src: 'https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775850/handmade.frontend/works/work_2.jpg',
       title: 'Kangaroo Valley Safari',
       about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
     },
     {
       id: '3',
-      src: 'assets/works/work_3.jpg',
+      src: 'https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775850/handmade.frontend/works/work_3.jpg',
       title: 'Kangaroo Valley Safari',
       about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
     },
     {
       id: '4',
-      src: 'assets/works/work_4.jpg',
-      title: 'Kangaroo Valley Safari',
-      about: 'Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...',
+      src: 'https://res.cloudinary.com/evgeniy-logvinov/image/upload/v1539775850/handmade.frontend/works/work_4.jpg',
+      title: 'Шапка "Мишка Тедди"',
+      about: 'Изготовлена из натуральной шерсти. Согреет вашего малыша в холодную зиму.',
     },
   ];
 
